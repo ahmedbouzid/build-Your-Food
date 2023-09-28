@@ -5,10 +5,12 @@
         <div class="name">
           {{item.name}}
         </div>
-        <span class="favortire {{item.favorite? '' : 'not' }} ">
-          ❤️
-        </span>
-        <igc-rating value=" {{item.stars}} "  min="1" max="5" ></igc-rating>
+        <div>
+          <span class="favorite" [ngClass]="item.favorite ? 'favorite' : 'not'">
+            ❤️
+          </span>
+        </div>
+        <igc-rating class="stars" value=" {{item.stars}} "  min="1" max="5" ></igc-rating>
         <div class="product-item-footer">
           <div class="origins">
             <span *ngFor="let item of item.origins"> {{item}} </span>

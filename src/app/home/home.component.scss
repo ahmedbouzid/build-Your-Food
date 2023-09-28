@@ -17,3 +17,33 @@ ul li a {
   color: rgb(156, 20, 20);
 }
 
+.content {
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.favorite {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+
+.not {
+  color: rgb(201, 201, 187);
+}
+.stars {
+  margin-bottom: .2rem;
+}
+.product-item-footer {
+
+}
+.cook-time {
+  font-size: .8rem;
+  color: rgb(127, 131, 131);
+}
+.price {
+  color: rgb(156, 148, 148);
+  margin-top: 1rem;
+}
