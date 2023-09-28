@@ -12,7 +12,7 @@ export class FoodService {
 
       {
         id: 1,
-        name: 'Pizza Pepperoni',
+        name: ' Spagetini',
         cookTime: '10-20',
         price: 10,
         favorite: false,
@@ -23,7 +23,7 @@ export class FoodService {
       },
       {
         id: 1,
-        name: 'Pizza Pepperoni',
+        name: 'Hamburger',
         cookTime: '10-20',
         price: 10,
         favorite: false,
@@ -34,7 +34,7 @@ export class FoodService {
       },
       {
         id: 1,
-        name: 'Pizza Pepperoni',
+        name: 'freet',
         cookTime: '10-20',
         price: 10,
         favorite: true,
@@ -56,7 +56,7 @@ export class FoodService {
       },
       {
         id: 1,
-        name: 'Pizza Pepperoni',
+        name: 'Pizza ',
         cookTime: '10-20',
         price: 10,
         favorite: false,
