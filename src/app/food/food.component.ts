@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Food } from '../shared/models/food';
+import { FoodService } from '../services/food/food.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-food',
@@ -7,10 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodComponent implements OnInit {
 
+    food !: Food ;
 
-  constructor(){}
+  constructor(
+
+    private service : FoodService,
+    private activatedRoute : ActivatedRoute
+    ){
+      this.activatedRoute.params.subscribe((params)=>{
+        if (params['id'])
+        this.food = this.service.getFoodById(params['id'])
+      })
+    }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log(this.food);
+
   }
 
 }
