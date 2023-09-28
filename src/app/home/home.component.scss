@@ -1,0 +1,21 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+ul li a {
+  display: flex;
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid rgb(189, 166, 166);
+  border-radius: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0.5rem ;
+  color: rgb(156, 20, 20);
+}
+img {
+  height: 100%;
+}
