@@ -2,8 +2,10 @@
   <img src="{{food?.imageUrl}}" [alt]="'NotFound'">
   <div class="details">
     <div class="header">
-      <span> {{food.name}} </span>
+      <span class="name"> {{food.name}} </span>
+
       <span class="favorite {{food.favorite?'' :'not'}} "> ♥ </span>
+    </div>
       <div class="rating">
         <igc-rating class="stars" value=" {{food.stars}} "  min="1" max="5" [style]="{'size' :'50px'}" ></igc-rating>
 
@@ -12,15 +14,15 @@
         <span *ngFor="let origin of food.origins"> {{origin}} </span>
       </div>
       <div class="tags">
-        <app-tags [foodPageTags]="food.tags"></app-tags>
+        <app-tags [foodPageTags]="food.tags" justifyContent="start"></app-tags>
       </div>
       <div class="cook-time">
         <span> Time For Coocking <strong>{{food.cookTime}} Mnts</strong> </span>
       </div>
       <div class="price">
-        <span>  {{food.price|currency}} </span>
+        <span> {{food.price|currency}} </span>
       </div>
       <button>Add To Card</button>
-    </div>
+
   </div>
 </div>
