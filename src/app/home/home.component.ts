@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     this.foods = this.service.getAll() ;
-    console.log(this.foods);
 
 
   }
