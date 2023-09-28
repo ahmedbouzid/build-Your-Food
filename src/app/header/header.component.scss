@@ -1,0 +1,27 @@
+
+
+header {
+  background-color: #cac1c1;
+  padding: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+}
+
+a{
+  color: black;
+  font-weight: 600;
+  &:hover {
+    background-color: red;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .4rem;
+  }
+
+}
+
