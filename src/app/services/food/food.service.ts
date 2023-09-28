@@ -52,7 +52,7 @@ export class FoodService {
         origins: ['Tun'],
         stars: 5,
         imageUrl: '/assets/img/food-4.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['FastFood', 'Pizza' ],
       },
       {
         id: 1,
@@ -63,7 +63,7 @@ export class FoodService {
         origins: ['Fr'],
         stars: 4.5,
         imageUrl: '/assets/img/food-5.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['FastFood'],
       },
       {
         id: 1,
@@ -74,10 +74,19 @@ export class FoodService {
         origins: ['italy'],
         stars: 4.5,
         imageUrl: '/assets/img/food-6.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: [ 'Pizza', 'Lunch'],
       },
 
 
     ]
+  }
+
+  getAllBytags(tag : string) : Food [] {
+
+
+    return  tag === "All" ?
+     this.getAll() :
+     this.getAll().filter(food => food.tags?.includes(tag))
+
   }
 }
