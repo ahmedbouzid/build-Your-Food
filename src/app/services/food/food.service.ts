@@ -90,7 +90,9 @@ export class FoodService {
      this.getAll().filter(food => food.tags?.includes(tag))
 
   }
-
+getAllFoodBySearchTerm(search : string) {
+    return this.getAll().filter(food => food.name.toLowerCase().includes(search.toLowerCase()))
+}
   getAllTag() : Tag[] {
       return  [
         {'name' : "All" , count : 12} ,
