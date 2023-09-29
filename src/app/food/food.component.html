@@ -1,4 +1,6 @@
-<div class="container">
+<app-not-found [visible]="!food " notFoundMessage="You don't have item with id "  resetLinkText="Go To home Page" routerLink=""  ></app-not-found>
+
+<div class="container" *ngIf="food">
   <img src="{{food.imageUrl}}" [alt]="'NotFound'">
   <div class="details">
     <div class="header">
