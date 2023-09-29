@@ -1,6 +1,4 @@
-
-<app-not-found [visible]="!card || card.items.length<=0" notFoundMessage="Cart Is Empty" resetLinkText="Go To home Page" routerLink=""  ></app-not-found>
-<div class="container" *ngIf="card && card.items.length>0">
+<div class="container">
 <ul>
   <li *ngFor="let item of card.items">
 
@@ -29,10 +27,9 @@
     </div>
   </li>
 </ul>
-
+</div>
 <div class="check-out">
   <div class="foods-count">  {{card.items.length}} </div>
   <div class="total-price">  {{card.total |currency}} </div>
 
-</div>
 </div>
