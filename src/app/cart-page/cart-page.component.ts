@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CardService } from '../services/card-service/card.service';
 import { Card } from '../shared/models/card';
 import { CardItem } from '../shared/models/card-item';
-import { FoodService } from '../services/food/food.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -12,18 +11,9 @@ import { FoodService } from '../services/food/food.service';
 export class CartPageComponent implements OnInit {
 
   card !: Card ;
-  constructor(
-    private cartService :CardService ,
-    private foodService : FoodService
-    ){}
+  constructor( private cartService :CardService){}
   ngOnInit(): void {
-    let foods = this.foodService.getAll() ;
-    this.cartService.addToCard(foods[1]) ;
-    this.cartService.addToCard(foods[5]) ;
-    this.cartService.addToCard(foods[3]) ;
-    this.setCard() ;
-
-
+    this.setCard()
   }
 
   removeFromCard( cardItem : CardItem) {
@@ -34,7 +24,7 @@ export class CartPageComponent implements OnInit {
   changeQte(cardItem : CardItem , qteInString : string) {
     const qte = parseInt(qteInString) ;
     this.cartService.changeQte(cardItem.food.id , qte)
-
+  
 
     this.setCard()
   }
