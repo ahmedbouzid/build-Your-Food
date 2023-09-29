@@ -1,8 +1,8 @@
-import { CartItem } from "./card-item";
+import { CardItem } from "./card-item";
 
 export class Card {
 
-  items : CartItem[] =[];
+  items : CardItem[] =[];
   get total () : number {
     let total = 0 ;
     this.items.forEach(item =>{
