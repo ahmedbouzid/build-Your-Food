@@ -23,7 +23,7 @@ export class FoodService {
         tags: ['FastFood', 'Pizza', 'Lunch'],
       },
       {
-        id: 1,
+        id: 2,
         name: 'Hamburger',
         cookTime: '10-20',
         price: 10,
@@ -34,7 +34,7 @@ export class FoodService {
         tags: ['FastFood', 'Pizza', 'Lunch'],
       },
       {
-        id: 1,
+        id: 3,
         name: 'freet',
         cookTime: '10-20',
         price: 10,
@@ -45,7 +45,7 @@ export class FoodService {
         tags: ['FastFood', 'Pizza', 'Lunch'],
       },
       {
-        id: 1,
+        id: 4,
         name: 'Pizza Pepperoni',
         cookTime: '10-20',
         price: 10,
@@ -56,7 +56,7 @@ export class FoodService {
         tags: ['FastFood', 'Pizza' ],
       },
       {
-        id: 1,
+        id: 5,
         name: 'Pizza ',
         cookTime: '10-20',
         price: 10,
@@ -67,7 +67,7 @@ export class FoodService {
         tags: ['FastFood'],
       },
       {
-        id: 1,
+        id: 6,
         name: 'Pizza Pepperoni',
         cookTime: '10-20',
         price: 10,
